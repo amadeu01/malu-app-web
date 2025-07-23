@@ -21,6 +21,7 @@ const translations = {
     'hero.tagline': 'Capture, preserve e redescubra os momentos lindos que tornam a vida especial. Seu santuário pessoal para memórias que importam.',
     'hero.downloadButton': 'Baixar na App Store',
     'hero.availability': 'Disponível agora no iOS • Em breve no Android',
+    'hero.appleStoreLink': 'https://apps.apple.com/us/app/malu-the-beautiful-moments/id6748530837',
     
     // Features
     'features.title': 'Por que você vai amar o malu',
@@ -89,6 +90,7 @@ const translations = {
     'hero.tagline': 'Capture, cherish, and rediscover the beautiful moments that make life special. Your personal sanctuary for memories that matter.',
     'hero.downloadButton': 'Download on App Store',
     'hero.availability': 'Available now on iOS • Coming soon to Android',
+    'hero.appleStoreLink': 'https://apps.apple.com/br/app/malu-the-beautiful-moments/id6748530837',
     
     // Features
     'features.title': 'Why you\'ll love malu',

@@ -45,7 +45,7 @@ const Index = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <a 
-              href="https://apps.apple.com/app/malu-beautiful-moments/id" 
+              href={t('hero.appleStoreLink')}
               target="_blank" 
               rel="noopener noreferrer"
             >
