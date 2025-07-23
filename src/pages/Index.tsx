@@ -15,7 +15,7 @@ const Index = () => {
       <header className="container mx-auto px-4 py-6">
         <nav className="flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <img src={maluIcon} alt="malu icon" className="w-10 h-10" />
+            <img src={maluIcon} alt="malu icon" className="w-10 h-10 rounded-xl shadow-lg" />
             <h1 className="text-2xl font-bold text-malu-text">malu</h1>
           </div>
           <div className="flex items-center space-x-4">
@@ -31,7 +31,7 @@ const Index = () => {
       <section className="container mx-auto px-4 py-16 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
-            <img src={maluIcon} alt="malu app icon" className="w-24 h-24 mx-auto mb-6" />
+            <img src={maluIcon} alt="malu app icon" className="w-24 h-24 mx-auto mb-6 rounded-2xl shadow-xl" />
             <h1 className="text-5xl md:text-6xl font-bold text-malu-text mb-4">
               malu
             </h1>
@@ -171,7 +171,7 @@ const Index = () => {
       <footer className="container mx-auto px-4 py-8 border-t border-malu-pink/20">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-3 mb-4 md:mb-0">
-            <img src={maluIcon} alt="malu icon" className="w-8 h-8" />
+            <img src={maluIcon} alt="malu icon" className="w-8 h-8 rounded-lg shadow-md" />
             <span className="text-malu-text">malu: beautiful moments</span>
           </div>
           <div className="flex space-x-6">
