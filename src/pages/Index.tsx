@@ -15,7 +15,7 @@ const Index = () => {
             <h1 className="text-2xl font-bold text-malu-text">malu</h1>
           </div>
           <Link to="/privacy">
-            <Button variant="ghost" className="text-malu-text">Privacy</Button>
+            <Button variant="ghost" className="text-malu-text">Privacidade</Button>
           </Link>
         </nav>
       </header>
@@ -32,8 +32,8 @@ const Index = () => {
               beautiful moments
             </p>
             <p className="text-lg text-malu-gray max-w-2xl mx-auto mb-8">
-              Capture, cherish, and rediscover the beautiful moments that make life special. 
-              Your personal sanctuary for memories that matter.
+              Capture, preserve e redescubra os momentos lindos que tornam a vida especial. 
+              Seu santuário pessoal para memórias que importam.
             </p>
           </div>
 
@@ -45,13 +45,13 @@ const Index = () => {
             >
               <Button variant="download" size="lg" className="text-lg px-8 py-6">
                 <Download className="w-5 h-5 mr-2" />
-                Download on App Store
+                Baixar na App Store
               </Button>
             </a>
           </div>
 
           <p className="text-sm text-malu-gray">
-            Available now on iOS • Coming soon to Android
+            Disponível agora no iOS • Em breve no Android
           </p>
         </div>
       </section>
@@ -60,10 +60,10 @@ const Index = () => {
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-malu-text mb-4">
-            Why you'll love malu
+            Por que você vai amar o malu
           </h2>
           <p className="text-lg text-center text-malu-gray mb-12 max-w-2xl mx-auto">
-            Simple, beautiful, and designed with your privacy in mind
+            Simples, lindo e projetado pensando na sua privacidade
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -72,9 +72,9 @@ const Index = () => {
                 <div className="w-16 h-16 bg-gradient-soft rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="w-8 h-8 text-malu-text" />
                 </div>
-                <CardTitle className="text-malu-text">Capture Moments</CardTitle>
+                <CardTitle className="text-malu-text">Capture Momentos</CardTitle>
                 <CardDescription className="text-malu-gray">
-                  Easily save your beautiful moments with photos, thoughts, and memories
+                  Salve facilmente seus momentos lindos com fotos, pensamentos e memórias
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -84,9 +84,9 @@ const Index = () => {
                 <div className="w-16 h-16 bg-gradient-soft rounded-full flex items-center justify-center mx-auto mb-4">
                   <Search className="w-8 h-8 text-malu-text" />
                 </div>
-                <CardTitle className="text-malu-text">Find & Rediscover</CardTitle>
+                <CardTitle className="text-malu-text">Encontre & Redescubra</CardTitle>
                 <CardDescription className="text-malu-gray">
-                  Powerful search to help you find and relive your favorite memories
+                  Busca poderosa para te ajudar a encontrar e reviver suas memórias favoritas
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -96,9 +96,9 @@ const Index = () => {
                 <div className="w-16 h-16 bg-gradient-soft rounded-full flex items-center justify-center mx-auto mb-4">
                   <Star className="w-8 h-8 text-malu-text" />
                 </div>
-                <CardTitle className="text-malu-text">Your Private Space</CardTitle>
+                <CardTitle className="text-malu-text">Seu Espaço Privado</CardTitle>
                 <CardDescription className="text-malu-gray">
-                  Keep your moments safe and private, with no ads or data tracking
+                  Mantenha seus momentos seguros e privados, sem anúncios ou rastreamento de dados
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -110,24 +110,24 @@ const Index = () => {
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-malu-text mb-4">
-            Beautiful design, thoughtful experience
+            Design lindo, experiência cuidadosa
           </h2>
           <p className="text-lg text-malu-gray mb-12">
-            Every detail crafted to help you focus on what matters most
+            Cada detalhe pensado para te ajudar a focar no que mais importa
           </p>
           
           <div className="bg-gradient-soft rounded-2xl p-8 shadow-card">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8">
               <div className="text-left max-w-md">
                 <h3 className="text-2xl font-semibold text-malu-text mb-4">
-                  "Today felt like a movie..."
+                  "Hoje parecia um filme..."
                 </h3>
                 <p className="text-malu-gray mb-4">
-                  Write about serendipitous gym encounters, playing childhood games under the stars, 
-                  or any moment that made you smile.
+                  Escreva sobre encontros casuais na academia, brincadeiras de infância sob as estrelas, 
+                  ou qualquer momento que te fez sorrir.
                 </p>
                 <p className="text-malu-gray">
-                  Search through your history and rediscover the joy in simple moments.
+                  Pesquise no seu histórico e redescubra a alegria em momentos simples.
                 </p>
               </div>
               <div className="flex-shrink-0">
@@ -144,10 +144,10 @@ const Index = () => {
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-malu-text mb-4">
-            Start collecting your beautiful moments
+            Comece a colecionar seus momentos lindos
           </h2>
           <p className="text-lg text-malu-gray mb-8">
-            Download malu today and begin your journey of mindful memory keeping
+            Baixe o malu hoje e comece sua jornada de guardar memórias com atenção
           </p>
           <a 
             href="https://apps.apple.com/app/malu-beautiful-moments/id" 
@@ -156,7 +156,7 @@ const Index = () => {
           >
             <Button variant="download" size="lg" className="text-lg px-8 py-6">
               <Download className="w-5 h-5 mr-2" />
-              Get malu on App Store
+              Baixar malu na App Store
             </Button>
           </a>
         </div>
@@ -171,15 +171,15 @@ const Index = () => {
           </div>
           <div className="flex space-x-6">
             <Link to="/privacy" className="text-malu-gray hover:text-malu-text transition-colors">
-              Privacy Policy
+              Política de Privacidade
             </Link>
             <a href="mailto:hello@malu.app" className="text-malu-gray hover:text-malu-text transition-colors">
-              Contact
+              Contato
             </a>
           </div>
         </div>
         <div className="text-center mt-4 text-sm text-malu-gray">
-          © 2025 malu. Made with love for beautiful moments.
+          © 2025 malu. Feito com amor para momentos lindos.
         </div>
       </footer>
     </div>
