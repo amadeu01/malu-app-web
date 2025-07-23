@@ -2,9 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Heart, Search, Camera, Star, Download } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageToggle from "@/components/LanguageToggle";
 import maluIcon from "@/assets/malu-icon.png";
 
 const Index = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="min-h-screen bg-gradient-hero">
       {/* Header */}
@@ -14,9 +18,12 @@ const Index = () => {
             <img src={maluIcon} alt="malu icon" className="w-10 h-10" />
             <h1 className="text-2xl font-bold text-malu-text">malu</h1>
           </div>
-          <Link to="/privacy">
-            <Button variant="ghost" className="text-malu-text">Privacidade</Button>
-          </Link>
+          <div className="flex items-center space-x-4">
+            <LanguageToggle />
+            <Link to="/privacy">
+              <Button variant="ghost" className="text-malu-text">{t('nav.privacy')}</Button>
+            </Link>
+          </div>
         </nav>
       </header>
 
@@ -32,8 +39,7 @@ const Index = () => {
               beautiful moments
             </p>
             <p className="text-lg text-malu-gray max-w-2xl mx-auto mb-8">
-              Capture, preserve e redescubra os momentos lindos que tornam a vida especial. 
-              Seu santuário pessoal para memórias que importam.
+              {t('hero.tagline')}
             </p>
           </div>
 
@@ -45,13 +51,13 @@ const Index = () => {
             >
               <Button variant="download" size="lg" className="text-lg px-8 py-6">
                 <Download className="w-5 h-5 mr-2" />
-                Baixar na App Store
+                {t('hero.downloadButton')}
               </Button>
             </a>
           </div>
 
           <p className="text-sm text-malu-gray">
-            Disponível agora no iOS • Em breve no Android
+            {t('hero.availability')}
           </p>
         </div>
       </section>
@@ -60,10 +66,10 @@ const Index = () => {
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-malu-text mb-4">
-            Por que você vai amar o malu
+            {t('features.title')}
           </h2>
           <p className="text-lg text-center text-malu-gray mb-12 max-w-2xl mx-auto">
-            Simples, lindo e projetado pensando na sua privacidade
+            {t('features.subtitle')}
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -72,9 +78,9 @@ const Index = () => {
                 <div className="w-16 h-16 bg-gradient-soft rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="w-8 h-8 text-malu-text" />
                 </div>
-                <CardTitle className="text-malu-text">Capture Momentos</CardTitle>
+                <CardTitle className="text-malu-text">{t('features.capture.title')}</CardTitle>
                 <CardDescription className="text-malu-gray">
-                  Salve facilmente seus momentos lindos com fotos, pensamentos e memórias
+                  {t('features.capture.description')}
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -84,9 +90,9 @@ const Index = () => {
                 <div className="w-16 h-16 bg-gradient-soft rounded-full flex items-center justify-center mx-auto mb-4">
                   <Search className="w-8 h-8 text-malu-text" />
                 </div>
-                <CardTitle className="text-malu-text">Encontre & Redescubra</CardTitle>
+                <CardTitle className="text-malu-text">{t('features.search.title')}</CardTitle>
                 <CardDescription className="text-malu-gray">
-                  Busca poderosa para te ajudar a encontrar e reviver suas memórias favoritas
+                  {t('features.search.description')}
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -96,9 +102,9 @@ const Index = () => {
                 <div className="w-16 h-16 bg-gradient-soft rounded-full flex items-center justify-center mx-auto mb-4">
                   <Star className="w-8 h-8 text-malu-text" />
                 </div>
-                <CardTitle className="text-malu-text">Seu Espaço Privado</CardTitle>
+                <CardTitle className="text-malu-text">{t('features.private.title')}</CardTitle>
                 <CardDescription className="text-malu-gray">
-                  Mantenha seus momentos seguros e privados, sem anúncios ou rastreamento de dados
+                  {t('features.private.description')}
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -110,24 +116,23 @@ const Index = () => {
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-malu-text mb-4">
-            Design lindo, experiência cuidadosa
+            {t('preview.title')}
           </h2>
           <p className="text-lg text-malu-gray mb-12">
-            Cada detalhe pensado para te ajudar a focar no que mais importa
+            {t('preview.subtitle')}
           </p>
           
           <div className="bg-gradient-soft rounded-2xl p-8 shadow-card">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8">
               <div className="text-left max-w-md">
                 <h3 className="text-2xl font-semibold text-malu-text mb-4">
-                  "Hoje parecia um filme..."
+                  {t('preview.quote')}
                 </h3>
                 <p className="text-malu-gray mb-4">
-                  Escreva sobre encontros casuais na academia, brincadeiras de infância sob as estrelas, 
-                  ou qualquer momento que te fez sorrir.
+                  {t('preview.description1')}
                 </p>
                 <p className="text-malu-gray">
-                  Pesquise no seu histórico e redescubra a alegria em momentos simples.
+                  {t('preview.description2')}
                 </p>
               </div>
               <div className="flex-shrink-0">
@@ -144,10 +149,10 @@ const Index = () => {
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-malu-text mb-4">
-            Comece a colecionar seus momentos lindos
+            {t('cta.title')}
           </h2>
           <p className="text-lg text-malu-gray mb-8">
-            Baixe o malu hoje e comece sua jornada de guardar memórias com atenção
+            {t('cta.subtitle')}
           </p>
           <a 
             href="https://apps.apple.com/app/malu-beautiful-moments/id" 
@@ -156,7 +161,7 @@ const Index = () => {
           >
             <Button variant="download" size="lg" className="text-lg px-8 py-6">
               <Download className="w-5 h-5 mr-2" />
-              Baixar malu na App Store
+              {t('cta.button')}
             </Button>
           </a>
         </div>
@@ -171,15 +176,15 @@ const Index = () => {
           </div>
           <div className="flex space-x-6">
             <Link to="/privacy" className="text-malu-gray hover:text-malu-text transition-colors">
-              Política de Privacidade
+              {t('footer.privacyPolicy')}
             </Link>
             <a href="mailto:hello@malu.app" className="text-malu-gray hover:text-malu-text transition-colors">
-              Contato
+              {t('footer.contact')}
             </a>
           </div>
         </div>
         <div className="text-center mt-4 text-sm text-malu-gray">
-          © 2025 malu. Feito com amor para momentos lindos.
+          {t('footer.copyright')}
         </div>
       </footer>
     </div>
